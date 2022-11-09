@@ -1,4 +1,5 @@
 'use client';
+
 import { useRouter } from 'next/navigation';
 import React, { FormEvent, useState } from 'react';
 
@@ -19,7 +20,10 @@ function Busca() {
         placeholder='Pesquisa ai viado'
         onChange={e => setTermo(e.target.value)}
       />
-      <button type='submit' className='btn'>
+      <button
+        className='bg-sky-500 text-white font-bold py-2 px-4 rounded-lg'
+        type='submit'
+      >
         Pesquisar
       </button>
     </form>
