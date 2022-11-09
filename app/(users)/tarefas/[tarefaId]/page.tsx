@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tarefas } from '../../../typings';
+import { Tarefas } from '../../../../typings';
 import { notFound } from 'next/navigation';
 
 export const dynamicParams = true;
@@ -17,8 +17,6 @@ const fetchTarefa = async (tarefaId: string) => {
     // { cache: 'no-cache' } =  SSR sempre Server Side Render
     // { cache: 'force-cache' } = SSG = sempre Static
     //{ next: {revalidate: 60} = ISR = Revalidar a cada 60segundos
-    // { cache: 'force-cache' }
-    // { cache: 'force-cache' }
   );
   const tarefa = await res.json();
   return tarefa;

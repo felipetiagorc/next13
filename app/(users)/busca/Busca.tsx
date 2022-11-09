@@ -15,9 +15,11 @@ function Busca() {
   return (
     <form onSubmit={handleBusca}>
       <input
+        className='border-4 rounded-lg p-2 w-max'
+        autoFocus
         type='text'
         value={termo}
-        placeholder='Pesquisa ai viado'
+        placeholder='Digite aqui'
         onChange={e => setTermo(e.target.value)}
       />
       <button
