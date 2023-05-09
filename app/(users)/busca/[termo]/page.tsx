@@ -20,7 +20,7 @@ type ResultadoBusca = {
 
 const buscar = async (termo: string) => {
   const res = await fetch(
-    `https://serpapi.com/search.json?q=${termo}&api_key=${process.env.API_SERP_KEY}`
+    `https://serpapi.com/search.json?engine=google&q=${termo}&gl=br&api_key=${process.env.API_SERP_KEY}`
   );
 
   const data: ResultadoBusca = await res.json();
