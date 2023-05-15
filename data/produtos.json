@@ -1,0 +1,7 @@
+{
+"name": "Cortador de Pizza",
+"descricao": "Um cortador",
+"preco": 6.99,
+"image": "http://localhost:8080/product7.jpg"
+
+}
